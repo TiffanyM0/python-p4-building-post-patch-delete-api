@@ -116,6 +116,7 @@ def review_by_id(id):
                 jsonify(review_dict),
                 200
         )
+        return response
     
     elif request.method == 'DELETE':
         db.session.delete(review)
